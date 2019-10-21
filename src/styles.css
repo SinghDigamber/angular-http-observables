@@ -1,1 +1,83 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    background-color: rgba(0, 123, 255, 0.10980392156862745);
+}
+.container {
+    max-width: 500px;
+    margin-top: 50px;
+}
+
+.search-bar {
+    position: relative;
+}
+
+.loader {
+    position: absolute;
+    top: 7px;
+    right: 10px;
+}
+
+.form-control {
+    border: none;
+    padding: .775rem .75rem;
+    height: auto;
+}
+
+img {
+    max-width: 30px;
+}
+
+p {
+    margin: 0;
+    position: relative;
+    top: -3px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.list-group {
+  max-height: 377px;
+  overflow: hidden;
+  overflow-y: auto;
+  cursor: pointer;
+  border-radius: 0 0 0.25rem 0.25rem;
+}
+
+.c-three-dots-loader {
+  position: relative;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin: -20px 20px 16px;
+  animation-fill-mode: both;
+  animation: three-dots-loader-animation 2s infinite ease-in-out;
+  animation-delay: -0.16s;
+  color: #323232;
+}
+.c-three-dots-loader:before,
+.c-three-dots-loader:after {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  top: 0;
+  animation: three-dots-loader-animation 2s infinite ease-in-out;
+  border-radius: 50%;
+}
+.c-three-dots-loader:before {
+  left: -16px;
+  animation-delay: -0.32s;
+}
+.c-three-dots-loader:after {
+  left: 16px;
+}
+@keyframes three-dots-loader-animation {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 20px 0 -24px;
+  }
+  40% {
+    box-shadow: 0 20px 0 0;
+  }
+}
